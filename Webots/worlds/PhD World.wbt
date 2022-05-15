@@ -1,0 +1,75 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.5518481766498362 -0.7337863183022973 -0.39625904279979607 3.1526853616355397
+  position 6.902471571235924 15.657546428552156 8.111803220422727
+}
+DirectionalLight {
+  direction 0 -1 0
+  intensity 2
+}
+DirectionalLight {
+  direction 0 1 0
+  intensity 2
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 5
+  location 0 1 0
+  radius 1000
+}
+RectangleArena {
+  rotation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0943951023931957
+  floorSize 10 10
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallHeight 2
+}
+DEF Chair5 Solid {
+  translation -2.9248 0 1.8377
+  rotation 0 -1 0 1.0472
+  children [
+    Armchair {
+      rotation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0943951023931957
+    }
+  ]
+  name "Chair"
+  recognitionColors [
+    0.6 0.2 0.1
+  ]
+}
+Pioneer3dx {
+  hidden rotation_29 0.5773835997359644 -0.5772836025763437 -0.5773835994834088 2.094400000252514
+  translation -6.12321e-18 0.1 0.0975
+  rotation -0.99999999999974 5.098076551716598e-07 5.098076552328923e-07 1.5707963267951566
+  controller "Agent_Rotate"
+  extensionSlot [
+    Kinect {
+      translation -0.249999 -6.63208e-07 0.14
+      rotation 1.3267899999988322e-06 4.794899999995779e-09 -0.9999999999991198 3.14159
+      width 640
+      height 480
+      maxRange 10
+    }
+    Camera {
+      translation -0.249999 -6.63208e-07 0.14
+      rotation 1.3267899999988322e-06 4.794899999995779e-09 -0.9999999999991198 3.14159
+      recognitionColors [
+        1 1 1
+      ]
+      width 480
+      height 270
+      recognition Recognition {
+      }
+    }
+    GPS {
+    }
+    Compass {
+      rotation 0 0 1 1.5708
+    }
+  ]
+}

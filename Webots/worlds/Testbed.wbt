@@ -1,0 +1,246 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.8557022739228762 -0.38678523269810383 -0.3437598030164268 1.398260419207151
+  position -4.4619390272051636 39.80881553091252 9.490970935908106
+}
+Robot {
+  translation -5.99 2.4 0
+  controller "StationCamera"
+  supervisor TRUE
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+Pioneer3dx {
+  translation -2.22177 0.0975 -2.19486
+  rotation 0 -1 0 0.261797
+  name "Agent1"
+  controller "Agent_V2"
+  supervisor TRUE
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Solid {
+      recognitionColors [
+        0.3 0.5 0
+      ]
+    }
+    Camera {
+      translation 0 0.19 -0.14
+      width 480
+      height 270
+      recognition Recognition {
+      }
+    }
+    DistanceSensor {
+      translation -3.46666e-07 0.15 -0.11
+      rotation 0 1 0 1.5708
+    }
+    Kinect {
+      translation 0 0.14 -0.11
+      width 480
+      height 270
+      maxRange 10
+    }
+  ]
+}
+Pioneer3dx {
+  translation 1.48426 0.0975 0.705075
+  rotation 0 1 0 -0.785395307179586
+  name "Agent2"
+  controller "Agent_V2"
+  supervisor TRUE
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Solid {
+      recognitionColors [
+        0.3 0.5 0
+      ]
+    }
+    Camera {
+      translation 0 0.19 -0.14
+      width 480
+      height 270
+      recognition Recognition {
+      }
+    }
+    DistanceSensor {
+      translation -3.46666e-07 0.15 -0.11
+      rotation 0 1 0 1.5708
+    }
+    Kinect {
+      translation 0 0.14 -0.14
+      width 480
+      height 270
+      maxRange 10
+    }
+  ]
+}
+Pioneer3dx {
+  translation -0.950539 0.0975 2.23371
+  rotation 0 1 0 -2.8797953071795863
+  name "Agent3"
+  controller "Agent_V2"
+  supervisor TRUE
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Solid {
+      recognitionColors [
+        0.3 0.5 0
+      ]
+    }
+    Camera {
+      translation 0 0.19 -0.14
+      width 240
+      height 135
+      recognition Recognition {
+      }
+    }
+    DistanceSensor {
+      translation -3.46666e-07 0.15 -0.11
+      rotation 0 1 0 1.5708
+    }
+    Kinect {
+      translation 0 0.14 -0.13
+      width 480
+      height 270
+      maxRange 10
+    }
+  ]
+}
+Wall {
+  translation -4.98 0 -0.06
+  rotation 0 1 0 -1.5707953071795862
+  name "wall(2)"
+  size 10 5 0.2
+}
+Wall {
+  translation 4.89 0 -0.0600092
+  rotation 0 1 0 -1.5707953071795862
+  name "wall(3)"
+  size 10 5 0.2
+}
+Wall {
+  translation -0.0499958 0 4.82999
+  rotation 0 1 0 1.01503e-06
+  name "wall(4)"
+  size 10 5 0.2
+}
+Wall {
+  translation -0.0500043 0 -4.92001
+  rotation 0 1 0 1.01503e-06
+  name "wall(5)"
+  size 10 5 0.2
+  appearance Roughcast {
+    textureTransform TextureTransform {
+      scale 0 2.4
+    }
+  }
+}
+DEF Chair5 Solid {
+  translation 1.2352 0 7.18414
+  rotation 0 1 0 2.24093e-06
+  children [
+    Armchair {
+    }
+  ]
+  recognitionColors [
+    0.6 0.2 0.1
+  ]
+}
+DEF Chair5 Solid {
+  translation -8.8948 0 1.60414
+  rotation 0 1 0 2.24093e-06
+  children [
+    Armchair {
+    }
+  ]
+  name "solid(3)"
+  recognitionColors [
+    0.6 0.2 0.1
+  ]
+}
+DEF Chair5 Solid {
+  translation -0.399801 0 -8.76344
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    Armchair {
+    }
+  ]
+  name "solid(2)"
+  recognitionColors [
+    0.6 0.2 0.1
+  ]
+}
+DEF Chair6 Solid {
+  translation 2.88305 0 7.17194
+  rotation 0 1 0 1.5708
+  children [
+    Sofa {
+    }
+  ]
+  name "solid(1)"
+  recognitionColors [
+    0.1 0.2 0.7
+  ]
+}
+DEF Oven1 Solid {
+  translation -8.64 0 -3.2
+  children [
+    Oven {
+    }
+  ]
+  name "Oven1"
+  recognitionColors [
+    0.4 0.5 0
+  ]
+}
+DEF Fridge1 Solid {
+  translation -7.85 0 -3.84
+  children [
+    Fridge {
+    }
+  ]
+  name "Fridge1"
+  recognitionColors [
+    0.2 0.3 0.5
+  ]
+}
+DEF Bed1 Solid {
+  translation 3.12 0 -8.08
+  rotation 0 1 0 1.5708
+  children [
+    Bed {
+    }
+  ]
+  name "Bed1"
+  recognitionColors [
+    0.5 0.1 0.1
+  ]
+}
+DEF Light4 Solid {
+  translation 7.63 0 -2.32
+  children [
+    FloorLight {
+      pointLightIntensity 5
+    }
+  ]
+  name "Light4"
+  recognitionColors [
+    0.3 0 0.4
+  ]
+}

@@ -3,8 +3,13 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
+<<<<<<< HEAD
   orientation 0.5501074159130437 -0.7167545029322149 -0.4285379953794847 2.9958612937912514
   position 12.614882881702801 25.69154936570966 10.84799579516675
+=======
+  orientation 0.5481754175915554 -0.7097205550117354 -0.44249344101597526 3.276827588657899
+  position 7.606361406961192 14.676763465617714 11.085644804434255
+>>>>>>> b3538cde89143ee1f73126a494307078b029c9c8
 }
 DirectionalLight {
   direction 0 -1 0
@@ -30,7 +35,11 @@ RectangleArena {
   wallHeight 2
 }
 DEF Chair5 Solid {
+<<<<<<< HEAD
   translation -3.8341 0 2.3627
+=======
+  translation -3.93802 0 2.4227
+>>>>>>> b3538cde89143ee1f73126a494307078b029c9c8
   rotation 0 -1 0 1.0472
   children [
     Armchair {
@@ -42,7 +51,11 @@ DEF Chair5 Solid {
     0.6 0.2 0.1
   ]
 }
+<<<<<<< HEAD
 Robot {
+=======
+Pioneer3dx {
+>>>>>>> b3538cde89143ee1f73126a494307078b029c9c8
   translation -6.12321e-18 0.1 0.0975
   rotation -0.99999999999974 5.098076551716598e-07 5.098076552328923e-07 1.5707963267951566
   children [
